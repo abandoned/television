@@ -1,0 +1,3 @@
+require "television"
+
+run Television

@@ -1,0 +1,7 @@
+#
+# Octopi GitHub API configuration file
+#
+
+# GitHub user login and token
+login: github-username
+token: github-token
