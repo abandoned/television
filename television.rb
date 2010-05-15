@@ -26,4 +26,10 @@ class Television < Sinatra::Base
   get "/" do
     erb :index
   end
+
+  helpers do
+    def github
+      @github ||= Octopussy::Client.new(YAML.load_file("github.yml"))
+    end
+  end
 end
