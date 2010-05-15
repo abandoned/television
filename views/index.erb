@@ -1,1 +1,5 @@
-Hello!!!!
+<% for repo in github.list_repos(github.login) %>
+  <h3><%= repo.name %></h3>
+<% end %>
+
+
