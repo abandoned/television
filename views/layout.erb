@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= github.login %></title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="stylesheets/application.css" type="text/css" />
+  <link rel="shortcut icon" href="/images/icon.png" />
+</head>
+ 
+<body>
+<section id="head">
+  <h1><%= github.login %></h1>
+</section>
+<section id="main">
+  <%= yield %>
+</section>
+<section id="footer">
+  Powered by Television
+</section>
+</body>
+</html>
