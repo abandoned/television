@@ -3,8 +3,8 @@ require "erb"
 
 class Television 
   class Server < Sinatra::Base
-    set :views,  "#{ROOT}/lib/television/views"
-    set :public, "#{ROOT}/lib/television/public"
+    set :views,  "#{Television.root}/lib/television/views"
+    set :public, "#{Television.root}/lib/television/public"
 
     get "/" do
       erb :index

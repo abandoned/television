@@ -6,9 +6,15 @@ require "rubygems"
 require "bundler"
 Bundler.setup
 
-ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
+class Television
+  class << self
+    def root
+      @root ||= File.expand_path(File.dirname(__FILE__) + '/..')
+    end
+  end
+end
 
-require "#{ROOT}/lib/patched_octopussy"
-require "#{ROOT}/lib/television/version"
-require "#{ROOT}/lib/television/config"
-require "#{ROOT}/lib/television/server"
+require "#{Television.root}/lib/patched_octopussy"
+require "#{Television.root}/lib/television/version"
+require "#{Television.root}/lib/television/config"
+require "#{Television.root}/lib/television/server"
