@@ -1,3 +1,3 @@
-require "television"
+require "lib/television"
 
-run Television
+run Television::Server
